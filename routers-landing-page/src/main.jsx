@@ -7,6 +7,7 @@ import Layout from "./Layout";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
+import Shadcn from "./components/Shadcn/Shadcn";
 import Github, { githubInfo } from "./components/Github/Github";
 import User from "./components/User/User";
 import Login from "./components/Login/Login";
@@ -52,6 +53,10 @@ const router = createBrowserRouter(
       <Route
         path="user/:id"
         element={<User />}
+      />
+       <Route
+        path="shadcn"
+        element={<Shadcn />}
       />
       <Route
         path="github"
